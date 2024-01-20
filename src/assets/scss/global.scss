@@ -1,0 +1,49 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+.flex-start {
+  justify-content: start;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.list-style-none{
+  list-style: none;
+}
