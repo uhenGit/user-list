@@ -213,7 +213,6 @@ export default {
         <div class="flex full-width flex-end form-actions">
           <div v-if="!isLoading">
             <div
-              v-if="editable"
               class=" flex btn-block"
             >
               <button
@@ -224,21 +223,13 @@ export default {
                 Cancel
               </button>
               <button
+                v-if="editable"
                 class="c-pointer btn-save"
                 :class="{ 'btn-disabled': userHasNoChanges }"
                 type="submit"
                 :disabled="userHasNoChanges"
               >
                 Save
-              </button>
-            </div>
-            <div v-else>
-              <button
-              class="c-pointer btn-cancel"
-                type="button"
-                @click="onHideModal"
-              >
-                Close
               </button>
             </div>
           </div>

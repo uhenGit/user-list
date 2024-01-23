@@ -97,10 +97,10 @@ export default {
         />
         <div class="flex user-credentials">
           <span
-            class="c-pointer"
+            class="c-pointer text-ellipsis"
             @click="showUserDetails(false, user.id)"
           >
-            {{ user.first_name }} {{ user.last_name }}:
+            {{ user.first_name }}&ensp;{{ user.last_name }}:
           </span>&ensp;
           <span>{{ user.email }}</span>
         </div>

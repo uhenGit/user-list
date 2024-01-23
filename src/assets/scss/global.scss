@@ -47,3 +47,10 @@ button {
 .list-style-none{
   list-style: none;
 }
+
+.text-ellipsis {
+  width: 250px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
